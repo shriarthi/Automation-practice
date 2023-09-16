@@ -10,7 +10,7 @@ public class FibinacciSeries {
 		
 	    for (i = 2; i < count; i++) {
 			
-	    	n3=n2+i
+	    	n3=n2+n1;
 	    	System.out.println(n3);
 	    	n1=n2;
 	    	n2=n3;
