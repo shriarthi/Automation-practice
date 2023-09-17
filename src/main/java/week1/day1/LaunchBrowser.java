@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.Select;
 
 public class LaunchBrowser {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		
 		//ChromeDriver driver =new ChromeDriver();
 		EdgeDriver driver =new EdgeDriver();
@@ -25,9 +25,24 @@ public class LaunchBrowser {
 		WebElement element = driver.findElement(By.id("createLeadForm_dataSourceId"));
 		
 		Select object=new Select(element);
-		//object.selectByValue("LEAD_EMPLOYEE");
-		//object.selectByIndex(1);
-		object.selectByVisibleText("Existing Customer");
+		object.selectByValue("LEAD_EMPLOYEE");
+		object.selectByIndex(1);
+		//object.selectByVisibleText("Existing Customer");
+		WebElement findElement = driver.findElement(By.id("createLeadForm_marketingCampaignId"));
+		
+		Select obj=new Select(findElement);
+		
+		obj.selectByValue("CATRQ_AUTOMOBILE");
+		
+		WebElement findElement2 = driver.findElement(By.id("createLeadForm_ownershipEnumId"));
+		 Select obje = new Select(findElement2);
+		 obje.selectByValue("OWN_CCORP");
+		 
+		 driver.findElement(By.id("sectionHeaderTitle_leads"));
+		 Thread.sleep(20000);
+		 
+		driver.close();
+		
 		
 	
 	}
