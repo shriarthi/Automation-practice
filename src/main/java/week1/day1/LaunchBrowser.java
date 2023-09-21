@@ -13,7 +13,9 @@ public class LaunchBrowser {
 		//ChromeDriver driver =new ChromeDriver();
 		EdgeDriver driver =new EdgeDriver();
 		driver.get("http://leaftaps.com/opentaps/");
+		
 		driver.manage().window().maximize();
+		
 		driver.findElement(By.name("USERNAME")).sendKeys("demosalesmanager");
 		driver.findElement(By.id("password")).sendKeys("crmsfa");
 		driver.findElement(By.className("decorativeSubmit")).click();
@@ -38,7 +40,11 @@ public class LaunchBrowser {
 		 Select obje = new Select(findElement2);
 		 obje.selectByValue("OWN_CCORP");
 		 
-		 driver.findElement(By.id("sectionHeaderTitle_leads"));
+		String title = driver.getTitle();  
+		System.out.println(title);
+		 
+		 
+		 //driver.findElement(By.id("sectionHeaderTitle_leads"));
 		 Thread.sleep(20000);
 		 
 		driver.close();
