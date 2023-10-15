@@ -10,7 +10,6 @@ public class LaunchBrowser {
 
 	public static void main(String[] args) throws InterruptedException {
 		
-		//ChromeDriver driver =new ChromeDriver();
 		EdgeDriver driver =new EdgeDriver();
 		driver.get("http://leaftaps.com/opentaps/");
 		

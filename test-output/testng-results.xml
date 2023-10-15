@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-10-10T21:24:51 IST" name="Suite" finished-at="2023-10-10T21:25:11 IST" duration-ms="19590">
+    <groups>
+    </groups>
+    <test started-at="2023-10-10T21:24:51 IST" name="Test" finished-at="2023-10-10T21:25:11 IST" duration-ms="19590">
+      <class name="testcases.MergeLead">
+        <test-method is-config="true" signature="precondition()[pri:0, instance:testcases.MergeLead@121314f7]" started-at="2023-10-10T21:24:51 IST" name="precondition" finished-at="2023-10-10T21:25:02 IST" duration-ms="10449" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- precondition -->
+        <test-method signature="mergeleag()[pri:0, instance:testcases.MergeLead@121314f7]" started-at="2023-10-10T21:25:02 IST" name="mergeleag" finished-at="2023-10-10T21:25:11 IST" duration-ms="8927" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='x-grid3-cell-inner x-grid3-col-partyId']/a"}
+  (Session info: MicrosoftEdge=117.0.2045.60)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [12cea414396386f12b9825ce348fcde8, findElement {using=xpath, value=//div[@class='x-grid3-cell-inner x-grid3-col-partyId']/a}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 117.0.2045.60, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:59184}, msedge: {msedgedriverVersion: 117.0.2045.60 (a31cef5dc4c1..., userDataDir: C:\Users\Dell\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59184/devtoo..., se:cdpVersion: 117.0.2045.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 12cea414396386f12b9825ce348fcde8]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='x-grid3-cell-inner x-grid3-col-partyId']/a"}
+  (Session info: MicrosoftEdge=117.0.2045.60)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [12cea414396386f12b9825ce348fcde8, findElement {using=xpath, value=//div[@class='x-grid3-cell-inner x-grid3-col-partyId']/a}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 117.0.2045.60, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:59184}, msedge: {msedgedriverVersion: 117.0.2045.60 (a31cef5dc4c1..., userDataDir: C:\Users\Dell\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59184/devtoo..., se:cdpVersion: 117.0.2045.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 12cea414396386f12b9825ce348fcde8
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at testcases.MergeLead.mergeleag(MergeLead.java:27)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:831)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mergeleag -->
+        <test-method is-config="true" signature="postcondition()[pri:0, instance:testcases.MergeLead@121314f7]" started-at="2023-10-10T21:25:11 IST" name="postcondition" finished-at="2023-10-10T21:25:11 IST" duration-ms="85" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postcondition -->
+      </class> <!-- testcases.MergeLead -->
+      <class name="testcases.CreateLead">
+        <test-method is-config="true" signature="precondition()[pri:0, instance:testcases.CreateLead@ffaa6af]" started-at="2023-10-10T21:24:51 IST" name="precondition" finished-at="2023-10-10T21:25:02 IST" duration-ms="10471" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- precondition -->
+        <test-method signature="runcreate()[pri:0, instance:testcases.CreateLead@ffaa6af]" started-at="2023-10-10T21:25:02 IST" name="runcreate" finished-at="2023-10-10T21:25:08 IST" duration-ms="6474" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runcreate -->
+        <test-method is-config="true" signature="postcondition()[pri:0, instance:testcases.CreateLead@ffaa6af]" started-at="2023-10-10T21:25:08 IST" name="postcondition" finished-at="2023-10-10T21:25:08 IST" duration-ms="168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postcondition -->
+      </class> <!-- testcases.CreateLead -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
