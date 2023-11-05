@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.CreateLead">
+      <class name="testcases.Tc_001_login">
         <methods>
-          <include name="runcreate"/>
+          <include name="PostCondition"/>
+          <include name="logindata"/>
+          <include name="precondition"/>
         </methods>
-      </class> <!-- testcases.CreateLead -->
+      </class> <!-- testcases.Tc_001_login -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
